@@ -7,7 +7,7 @@ It includes an **Industry Switch** (SaaS / Healthcare / FinTech / Energy) and a 
 > Draft outputs only — review for policy, legal, and compliance before use.
 
 ## Why it matters
-- ≤ **30 seconds** to a first‑draft plan (≈ **90% faster** in demo scenarios)
+- ≤ **30 seconds** to a first‑draft plan (≈ **90% faster** compared to manual methods)
 - Adapts risks, KPIs, compliance cues, and vocabulary to your **industry**
 - Exports a board‑ready **PM Pack (PDF)** for SteerCo/executive review
 

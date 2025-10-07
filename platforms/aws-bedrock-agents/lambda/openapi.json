@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ATLAS PM Pack Generator",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/generate": {
+      "post": {
+        "operationId": "generatePMPack",
+        "summary": "Generate PM Pack and return a file URL",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GeneratePayload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenerateResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GeneratePayload": {
+        "type": "object",
+        "properties": {
+          "projectName": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          },
+          "riskTolerance": {
+            "type": "string"
+          },
+          "artifacts": {
+            "type": "object"
+          },
+          "executiveSummary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "projectName",
+          "industry",
+          "riskTolerance",
+          "artifacts",
+          "executiveSummary"
+        ]
+      },
+      "GenerateResponse": {
+        "type": "object",
+        "properties": {
+          "file_url": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_url"
+        ]
+      }
+    }
+  }
+}

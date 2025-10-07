@@ -18,9 +18,9 @@ It includes an **Industry Switch** (SaaS / Healthcare / FinTech / Energy) and a 
 4. **Export:** Call **Generate PM Pack (PDF)** (Power Automate) and return a SharePoint link
 
 ## Demo
-- 🎥 **60–90s video:** _Add your Loom/YouTube link here_
-- 📄 **Sample PM Packs (PDF):** _Add Drive/OneDrive links here_
-- 🔗 **Overview page:** _Add Google Sites/Notion link here_
+- 🎥 **60–90s video:** _Coming Soon_
+- 📄 **Sample PM Packs (PDF):** _Coming Soon_
+- 🔗 **Overview page:** _Coming Soon_
 
 ## Architecture
 See [`/docs/architecture.md`](docs/architecture.md).

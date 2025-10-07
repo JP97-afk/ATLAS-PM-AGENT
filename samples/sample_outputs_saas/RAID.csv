@@ -1,0 +1,3 @@
+Type,Description,Impact,Probability,Mitigation/Next Step,Owner
+Risk,Latency spikes during canary routing,H,M,Gradual ramp and rollback guardrails,SRE Lead
+Dependency,SDK updates across services,M,M,Phased rollout with owner sign-off,Eng Leads

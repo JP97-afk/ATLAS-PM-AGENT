@@ -1,0 +1,3 @@
+Stakeholder,Interest,Influence,Message,Channel,Owner
+CPO,H,H,De-risk releases while speeding delivery,SteerCo,PM
+SRE Lead,H,M,Ensure observability and rollback,Slack/Runbook,Eng Lead

@@ -1,0 +1,5 @@
+Phase,Objective,Key Activities,Entry Criteria,Exit Criteria
+0,Discovery,Requirements and risk review,Approved brief,Defined scope and plan
+1,Planning,Architecture and security review,Approved Phase 0,Sign-offs + pilot plan
+2,Build/Pilot,Implement SDK and canary,UAT readiness,Pilot KPIs met
+3,Launch/Scale,Rollout and training,Pilot go,Adoption & KPI targets hit

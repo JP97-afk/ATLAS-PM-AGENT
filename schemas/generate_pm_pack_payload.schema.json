@@ -1,0 +1,274 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generate PM Pack Payload",
+  "type": "object",
+  "required": [
+    "projectName",
+    "industry",
+    "riskTolerance",
+    "artifacts",
+    "executiveSummary"
+  ],
+  "properties": {
+    "projectName": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "SaaS",
+        "Healthcare",
+        "FinTech",
+        "Energy"
+      ]
+    },
+    "riskTolerance": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "artifacts": {
+      "type": "object",
+      "required": [
+        "raid",
+        "raci",
+        "stakeholders",
+        "commsPlan",
+        "roadmap",
+        "kpis"
+      ],
+      "properties": {
+        "raid": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "description",
+              "impact",
+              "probability",
+              "mitigation",
+              "owner"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "Risk",
+                  "Assumption",
+                  "Issue",
+                  "Dependency"
+                ]
+              },
+              "description": {
+                "type": "string"
+              },
+              "impact": {
+                "type": "string",
+                "enum": [
+                  "H",
+                  "M",
+                  "L"
+                ]
+              },
+              "probability": {
+                "type": "string",
+                "enum": [
+                  "H",
+                  "M",
+                  "L"
+                ]
+              },
+              "mitigation": {
+                "type": "string"
+              },
+              "owner": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "raci": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "task",
+              "r",
+              "a",
+              "c",
+              "i"
+            ],
+            "properties": {
+              "task": {
+                "type": "string"
+              },
+              "r": {
+                "type": "string"
+              },
+              "a": {
+                "type": "string"
+              },
+              "c": {
+                "type": "string"
+              },
+              "i": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "stakeholders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "stakeholder",
+              "interest",
+              "influence",
+              "message",
+              "channel",
+              "owner"
+            ],
+            "properties": {
+              "stakeholder": {
+                "type": "string"
+              },
+              "interest": {
+                "type": "string",
+                "enum": [
+                  "H",
+                  "M",
+                  "L"
+                ]
+              },
+              "influence": {
+                "type": "string",
+                "enum": [
+                  "H",
+                  "M",
+                  "L"
+                ]
+              },
+              "message": {
+                "type": "string"
+              },
+              "channel": {
+                "type": "string"
+              },
+              "owner": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "commsPlan": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "audience",
+              "purpose",
+              "channel",
+              "cadence",
+              "owner",
+              "artifact"
+            ],
+            "properties": {
+              "audience": {
+                "type": "string"
+              },
+              "purpose": {
+                "type": "string"
+              },
+              "channel": {
+                "type": "string"
+              },
+              "cadence": {
+                "type": "string"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "artifact": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "roadmap": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "phase",
+              "objective",
+              "keyActivities",
+              "entryCriteria",
+              "exitCriteria"
+            ],
+            "properties": {
+              "phase": {
+                "type": "string",
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3"
+                ]
+              },
+              "objective": {
+                "type": "string"
+              },
+              "keyActivities": {
+                "type": "string"
+              },
+              "entryCriteria": {
+                "type": "string"
+              },
+              "exitCriteria": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "kpis": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "metric",
+              "definition",
+              "target",
+              "cadence",
+              "dataSource"
+            ],
+            "properties": {
+              "metric": {
+                "type": "string"
+              },
+              "definition": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              },
+              "cadence": {
+                "type": "string"
+              },
+              "dataSource": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "executiveSummary": {
+      "type": "string"
+    }
+  }
+}

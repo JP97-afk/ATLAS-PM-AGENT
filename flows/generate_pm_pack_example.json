@@ -1,0 +1,14 @@
+{
+  "name": "Generate PM Pack (PDF)",
+  "description": "Example Power Automate flow structure (placeholder). Expects JSON matching /schemas/generate_pm_pack_payload.schema.json.",
+  "triggers": [
+    "When an HTTP request is received"
+  ],
+  "actions": [
+    "Parse JSON",
+    "Populate Word template (content controls)",
+    "Convert Word to PDF",
+    "Create file in SharePoint",
+    "Respond with link to PDF"
+  ]
+}

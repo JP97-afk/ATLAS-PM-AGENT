@@ -1,4 +1,4 @@
-# A.T.L.A.S. Demo on OpenAI (Custom GPT)
+# A.T.L.A.S. on OpenAI (Custom Agent)
 
 **Why this platform**
 - Best as a counterpart to the enterprise Copilot build.

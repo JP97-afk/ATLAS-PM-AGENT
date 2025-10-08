@@ -20,7 +20,7 @@
    - Add an **Action group** in the Agent; import the **OpenAPI schema** in `lambda/openapi.json` to declare the tool.
 
 3. **Test**
-   - Use the built‑in chat in the Bedrock console. Provide the Sheboygan sample brief and verify S3 outputs.
+   - Use the built‑in chat in the Bedrock console. Provide the project brief and verify S3 outputs.
 
 ## Cost & Limits
 - You pay per token + Lambda/S3 costs. Keep sessions short and cache static content.

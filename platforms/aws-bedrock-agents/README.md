@@ -1,7 +1,7 @@
 # A.T.L.A.S. on AWS — Agents for Bedrock
 
 **Why use it**
-- Good for teams standardized on AWS; shows cross‑platform credibility.
+- Good for teams standardized on AWS.
 
 ## Prerequisites
 - AWS account with access to **Agents for Bedrock** and a model (e.g., **Anthropic Claude**).

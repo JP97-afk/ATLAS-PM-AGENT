@@ -1,9 +1,7 @@
 # A.T.L.A.S. on Microsoft Copilot Studio (Recommended)
 
 **Why this platform**
-- Maximizes recruiter pull for enterprise PM roles (M365 ecosystem).
 - No‑code build; native export via **Power Automate + Word + SharePoint**.
-- Great demo inside Teams/Office.
 
 ## Prerequisites
 - Microsoft 365 tenant with **Copilot Studio** and **Power Automate (Premium)** licenses.
@@ -39,5 +37,4 @@
    - Use `samples/sample_brief_saas.md` as the brief.
    - Verify artifacts (RAID, RACI, Stakeholders, Comms, Roadmap, KPIs) and PDF export.
 
-## Publish/Demo
-- If you can’t publish tenant‑wide, demo from Studio. Record a 60–90s Loom and link it in the repo.
+
